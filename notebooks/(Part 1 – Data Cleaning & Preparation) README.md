@@ -67,24 +67,29 @@ The workflow combines Python's built-in CSV and JSON handling, Pandas data manip
 
 ## Dataset Validation Results
 
-| Validation Metric | Result |
-| Original appointment records | 1,020 |
-| Exact duplicate records removed | 20 |
-| Records with invalid appointment dates/status removed | 10 |
-| Final appointment records | 990 |
-| Final appointment columns | 16 |
-| Unique appointment IDs | 990 |
-| Missing values in final appointment dataset | 0 |
-| Total no-show appointments | 218 |
-| Overall no-show rate | 22.0% |
+The final appointment dataset was validated after completing the cleaning and preprocessing workflow.
+
+- **Original appointment records:** 1,020
+- **Exact duplicate records removed:** 20
+- **Records with invalid appointment dates or missing statuses removed:** 10
+- **Final appointment records:** 990
+- **Final appointment columns:** 16
+- **Unique appointment IDs:** 990
+- **Missing values in the final appointment dataset:** 0
+- **Total no-show appointments:** 218
+- **Overall no-show rate:** 22.0%
+
+The final dataset contains 990 unique appointment records with 16 columns and no missing values, making it ready for subsequent SQL analysis and machine learning development.
 
 ## Generated Outputs
 
-| File | Description |
-| `rejected_rows.json` | Records rejected during initial CSV validation |
-| `appointments_clean.csv` | Final cleaned appointment dataset |
-| `clinics_enriched.csv` | Clinic dataset enriched with temperature information |
-| `load_data.sql` | SQL INSERT statements for database loading |
+The following files are generated as part of the Part 1 data preparation workflow:
+
+- **`rejected_rows.json`** – Stores appointment records rejected during initial CSV validation due to data type conversion errors.
+- **`appointments_clean.csv`** – Contains the final cleaned, validated, and analysis-ready appointment dataset.
+- **`clinics_enriched.csv`** – Contains clinic records enriched with temperature information retrieved through the Open-Meteo API.
+- **`load_data.sql`** – Contains SQL INSERT statements for loading clinic and appointment records into MySQL.
+
 
 ## Technologies Used
 
