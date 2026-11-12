@@ -1,6 +1,6 @@
 **Overview**
 
-Part 2 focuses on database creation, data loading, and SQL-based analysis of appointment records. The cleaned appointment dataset and enriched clinic information generated in Part 1 are imported into MySQL to perform structured queries and investigate no-show patterns across clinics, booking lead times, and monthly trends. 
+This part focuses on database creation, data loading, and SQL-based analysis of appointment records. The cleaned appointment dataset and enriched clinic information generated in Part 1 are imported into MySQL to perform structured queries and investigate no-show patterns across clinics, booking lead times, and monthly trends. 
 
 This stage uses SQL to transform cleaned data into actionable business insights that support appointment management and subsequent machine learning development.
 
