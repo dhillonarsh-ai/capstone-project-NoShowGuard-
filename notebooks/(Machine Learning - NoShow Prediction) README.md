@@ -1,4 +1,4 @@
-# Part 3: Machine Learning – NoShow Prediction
+# Part 3: Machine Learning - NoShow Prediction
 
 ## Overview
 This notebook develops machine learning models to predict patient appointment no-shows using the cleaned NoShowGuard dataset. The objective is to identify appointments with a higher probability of being missed and support proactive patient follow-up.
